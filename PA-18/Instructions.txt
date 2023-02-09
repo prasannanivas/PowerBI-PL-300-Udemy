@@ -1,0 +1,37 @@
+Let's practice these initial functions. We will be using the Model that you developed in the previous Practice Activity.
+
+1. In the table DimCustomer, can you create a new calculated column called FullName which combines Title, FirstName, MiddleName and LastName into one column.
+
+    You may notice some unnecessary spaces. We will be removing them in a later Practice Activity.
+
+2. Create a new calculated column called NoMiddleName which shows "No middle name" if there is no MiddleName, and a blank if there is a MiddleName.
+
+3. Create a new calculated column called HasBothHouseAndCar.
+
+    It should have "Yes" if both HouseOwnerFlag and NumberCarsOwned are at least 1 each. Use the function AND(   ,    )
+
+    If not, then you can either do:
+
+    a. "No", or
+
+    b. If you are up for a challenge, it should have the values "Car Only", "House Only", and "Neither", depending on the values of these fields.
+
+----.
+
+I want to investigate whether we have seasonal sales.
+
+4. In the table FactInternetSales, can you create a new calculated column called QuarterNumber which gives the QuarterNr of the OrderDate.
+
+5. Please create a visualization which shows whether there are any seasonality in the sales, by QuarterNumber and SalesAmount.
+
+6. Using this calculated column, can you create a new calculated column called Season so that it shows the words Spring, Summer, Autumn and Winter for the numbers 1, 2, 3 and 4 (or you can use 3, 4, 1, 2, if you are in the southern hemisphere!). Use the SWITCH function.
+
+7. Update this visualization so that it shows the words Spring, Summer, Autumn and Winter. Sort them by the Season field. If they are in the wrong order, then sort this field using the QuarterNumber field.
+
+8. In the DimSalesTerritory table, create a new calculated column called InUS. It should have the values "In US" or "Outside of US", depending on whether the SalesTerritoryCountry field says "United Sales" or not.
+
+9. Go back to the visualization we created in the previous Practice Activity which has SalesTerritoryGroup, SalesTerritoryCountry, SalesTerritoryRegion and Sum of SalesAmount. Change the visualization to a Stacked Column Chart, move any Legend and "Small multiples" fields to the Axis, and add the "InUS" field into the Legend.
+
+
+
+Please save the Model developed in this Practice Activity. We will be using it in later Practice Activities.
